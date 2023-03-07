@@ -1,0 +1,152 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--gray-200);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: var(--gray-600);
+}
+.container {
+  width: var(--container-lg);
+  max-width: 1920px;
+  margin: 0 auto;
+  @media screen and (max-width: 1023.98px) {
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  color: var(--gray-100);
+}
+
+a {
+  color: var(--gray-100);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+.btn {
+  width: fit-content;
+  margin: o auto;
+  padding: 0.9rem 2rem;
+  color: var(--gray-100);
+  background: var(--primary-color);
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--secondary-color);
+  color: var(--gray-600);
+}
+.btn.lg {
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  color: var(--gray-100);
+}
+
+section {
+  margin-top: 10rem;
+}
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section__head span {
+  background: var(--gray-500);
+  padding: 0.4rem 0.5rem 0rem 0.5rem;
+  border-radius: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+.section__head:hover span {
+  background-color: var(--gray-100);
+  transition: var(--transition);
+}
+.section__head:hover h2 {
+  color: var(--secondary-color);
+}
+.card {
+  background: var(--gray-500);
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem;
+  transition: var(--transition);
+  @media screen and (max-width: 1023.98px) {
+    padding: 2rem 1rem;
+  }
+}
+.card:hover {
+  background: transparent;
+  border-color: var(--gray-400);
+  cursor: default;
+}
+.card span {
+  width: 3rem;
+  height: 3rem;
+  background: var(--primary-color);
+  color: var(--gray-100);
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+.card:hover span {
+  background: var(--secondary-color);
+  color: var(--gray-600);
+}
+.card small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
+}
+@media screen and (max-width: 1023.98px) {
+  .btn.lg {
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .header {
+    &__container {
+      grid-template-columns: 100%;
+      margin: 0;
+    }
+    &-circle {
+      max-width: 240px;
+      max-height: 240px;
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      margin-top: 0;
+      p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.trainers {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+  @media screen and (max-width: 1023.98px) {
+    margin-top: 5rem;
+    &__container {
+      grid-template-columns: 100%;
+      gap: 2rem;
+    }
+  }
+}
+.card.trainer {
+  padding: 1rem;
+}
+.trainer {
+  &__img {
+    border-radius: 0 2rem;
+    overflow: hidden;
+    img {
+      max-height: 145px;
+    }
+  }
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  a {
+    transition: var(--trainsition);
+    padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 1rem;
+    background: var(--gray-600);
+    border: 2px solid transparent;
+    transition: var(--transition);
+    :hover {
+      color: var(--secondary-color);
+      background: var(--gray-500);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.programs {
+  margin-top: 11rem;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    margin-top: 4rem;
+  }
+  &__program a {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__program:hover a {
+    background: var(--secondary-color);
+    color: var(--gray-600);
+  }
+  @media screen and (max-width: 1023.98px) {
+    margin-top: 5rem;
+    &__wrapper {
+      grid-template-columns: 100%;
+      gap: 2rem;
+      justify-content: center;
+    }
+    &__program {
+      max-width: 20rem;
+      max-height: 20rem;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.gallery {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  @media screen and (max-width: 1023.98px) {
+    margin-top: 5rem;
+    &__container {
+      grid-template-columns: 100%;
+    }
+  }
+}
